@@ -127,9 +127,13 @@
     <ClCompile Include="Data_Structure_Algorithm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DataStructure\Associative_Container\MyDoublyLinkedList.h" />
     <ClInclude Include="DataStructure\Associative_Container\MyFowardList.h" />
     <ClInclude Include="DataStructure\Associative_Container\MyVector.h" />
     <ClInclude Include="DataStructure\Associative_Container\SinglyLinkedList_Practice.h" />
+    <ClInclude Include="DataStructure\Container_Adaptor\MyCircularQueue.h" />
+    <ClInclude Include="DataStructure\Container_Adaptor\MyPriorityQueue_practice.h" />
+    <ClInclude Include="DataStructure\Container_Adaptor\MyQueue.h" />
     <ClInclude Include="DataStructure\Container_Adaptor\MyStack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
