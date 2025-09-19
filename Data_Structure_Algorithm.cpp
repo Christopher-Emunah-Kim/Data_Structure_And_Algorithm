@@ -10,7 +10,7 @@ int main()
 	//3. Peek
 	//4. TestPrintQueue
 	//5. 종료
-	/*MyQueue q;
+	MyQueue q;
 	
 	while (true)
 	{
@@ -61,8 +61,6 @@ int main()
 		}
 		}
 	}
-	*/
-	//Circular Queue 2만들기 (생성자에서 파라미터 받아 크기 조절 가능하도록)
 
 
 }
