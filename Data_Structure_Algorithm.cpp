@@ -1,62 +1,61 @@
 ﻿
 #include <iostream>
 #include <string>
-#include "DataStructure/Nonlinear_Structures/Tree/MyDefaultTree.h"
+#include "DataStructure/Nonlinear_Structures/Tree/MyBinarySearchTree.h"
 
 using namespace std;
 
 int main()
 {
 	//트리 생성
-	MyDefaultTree<string>* tree = new MyDefaultTree<string>("Root");
-	tree->AddChild("B");
-	tree->AddChild("B", "E");
-	tree->AddChild("B", "F");
+	MyBinarySearchTree<int> tree;
 
-	tree->AddChild("C");
-	tree->AddChild("C", "G");
+	//삽입
+    tree.InsertNode(50);
+    tree.InsertNode(30);
+    tree.InsertNode(20);
+    tree.InsertNode(40);
+    tree.InsertNode(70);
+    tree.InsertNode(60);
+    tree.InsertNode(80);
+    tree.InsertNode(100);
+    tree.InsertNode(120);
+    tree.InsertNode(130);
+    tree.InsertNode(110);
+    tree.InsertNode(150);
+    tree.InsertNode(170);
+    tree.InsertNode(140);
 
-	tree->AddChild("D");
-	tree->AddChild("D", "H");
-	tree->AddChild("D", "I");
+    //전위
+	tree.PreOrderTraverse();
+    //중위
+    tree.InOrderTraverse();
+    //후위
+    tree.PostOrderTraverse();
 
+    //탐색
+	int value = 30;
+    if(tree.SearchNode(value))
+        cout << value << " exists in the tree." << endl;
+    else
+		cout << value << " does not exist in the tree." << endl;
 
-	//순회
-	cout << "Pre-order Traversal:" << endl;
-	tree->PreOrderTraverse();
-	cout << "Pre-order Traversal End" << endl << endl;
+    //삭제
+	int deleteValue = 20;
+    tree.DeleteNode(deleteValue);
+    cout << "After deleting " << deleteValue << ":" << endl;
+	tree.InOrderTraverse();
 
-	cout << "Post-order Traversal:" << endl;
-	tree->PostOrderTraverse();
-	cout << "Post-order Traversal End" << endl << endl;
+    deleteValue = 50;
+	tree.DeleteNode(deleteValue);
+    cout << "After deleting " << deleteValue << ":" << endl;
+    tree.InOrderTraverse();
 
-	//검색
-	MyTreeNode<string>* outNode;
-	if (tree->Find("I", &outNode))
-	{
-		cout << "검색 성공, 부모 : " 
-			<< (outNode->GetParent() ? outNode->GetParent()->GetData() : "None") 
-			<< ", 자식 수 : " << outNode->GetChildren()->size() << endl;
-	}
-	else
-	{
-		cout << "검색 실패" << endl;
-	}
-
-	//삭제
-	if(tree->Remove("B"))
-	{
-		cout << "노드 B 삭제 성공" << endl;
-		cout << "삭제 후 Pre-order Traversal:" << endl;
-		tree->PreOrderTraverse();
-		cout << "Pre-order Traversal End" << endl << endl;
-	}
-	else
-	{
-		cout << "노드 B 삭제 실패" << endl;
-	}
-
-	delete tree;
+    deleteValue = 100;
+    tree.DeleteNode(deleteValue);
+    cout << "After deleting " << deleteValue << ":" << endl;
+	tree.InOrderTraverse();
+	
 
 	//종료 대기
 	std::cin.get();

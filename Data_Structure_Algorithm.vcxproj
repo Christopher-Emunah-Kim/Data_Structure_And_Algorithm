@@ -135,6 +135,7 @@
     <ClInclude Include="DataStructure\Linear_Structures\Container_Adaptor\MyPriorityQueue_practice.h" />
     <ClInclude Include="DataStructure\Linear_Structures\Container_Adaptor\MyQueue.h" />
     <ClInclude Include="DataStructure\Linear_Structures\Container_Adaptor\MyStack.h" />
+    <ClInclude Include="DataStructure\Nonlinear_Structures\Tree\MyBinarySearchTree.h" />
     <ClInclude Include="DataStructure\Nonlinear_Structures\Tree\MyDefaultTree.h" />
     <ClInclude Include="DataStructure\Nonlinear_Structures\Tree\MyTreeNode.h" />
   </ItemGroup>
