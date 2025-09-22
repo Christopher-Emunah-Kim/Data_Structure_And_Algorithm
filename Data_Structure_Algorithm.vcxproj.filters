@@ -20,28 +20,34 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DataStructure\Associative_Container\MyVector.h">
+    <ClInclude Include="DataStructure\Linear_Structures\Associative_Container\MyVector.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="DataStructure\Associative_Container\MyFowardList.h">
+    <ClInclude Include="DataStructure\Linear_Structures\Associative_Container\MyFowardList.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="DataStructure\Associative_Container\SinglyLinkedList_Practice.h">
+    <ClInclude Include="DataStructure\Linear_Structures\Associative_Container\SinglyLinkedList_Practice.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="DataStructure\Container_Adaptor\MyStack.h">
+    <ClInclude Include="DataStructure\Linear_Structures\Container_Adaptor\MyStack.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="DataStructure\Associative_Container\MyDoublyLinkedList.h">
+    <ClInclude Include="DataStructure\Linear_Structures\Associative_Container\MyDoublyLinkedList.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="DataStructure\Container_Adaptor\MyCircularQueue.h">
+    <ClInclude Include="DataStructure\Linear_Structures\Container_Adaptor\MyCircularQueue.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="DataStructure\Container_Adaptor\MyQueue.h">
+    <ClInclude Include="DataStructure\Linear_Structures\Container_Adaptor\MyQueue.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="DataStructure\Container_Adaptor\MyPriorityQueue_practice.h">
+    <ClInclude Include="DataStructure\Linear_Structures\Container_Adaptor\MyPriorityQueue_practice.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructure\Nonlinear_Structures\Tree\MyTreeNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructure\Nonlinear_Structures\Tree\MyDefaultTree.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
