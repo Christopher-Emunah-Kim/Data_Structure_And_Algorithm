@@ -53,5 +53,11 @@
     <ClInclude Include="DataStructure\Nonlinear_Structures\Tree\MyBinarySearchTree.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="DataStructure\Nonlinear_Structures\Graph\AdjacencyMatrixGraph.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructure\Nonlinear_Structures\Graph\AdjacencyListGraph.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

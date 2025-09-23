@@ -1,62 +1,20 @@
 ﻿
 #include <iostream>
 #include <string>
-#include "DataStructure/Nonlinear_Structures/Tree/MyBinarySearchTree.h"
+#include "DataStructure/Nonlinear_Structures/Graph/AdjacencyListGraph.h"
 
 using namespace std;
 
 int main()
 {
-	//트리 생성
-	MyBinarySearchTree<int> tree;
+	AdjacencyListGraph graph(6);
+	graph.AddEdge(city::MOSCOW, city::LONDON, 2500);
+	graph.AddEdge(city::MOSCOW, city::SEOUL, 7000);
+	graph.AddEdge(city::MOSCOW, city::SEATTLE, 7500);
+	graph.AddEdge(city::LONDON, city::DUBAI, 5500);
+	graph.AddEdge(city::LONDON, city::SEATTLE, 7200);
+	graph.AddEdge(city::SEOUL, city::SYDNEY, 7800);
+	graph.RemoveEdge(city::MOSCOW, city::SEOUL);
 
-	//삽입
-    tree.InsertNode(50);
-    tree.InsertNode(30);
-    tree.InsertNode(20);
-    tree.InsertNode(40);
-    tree.InsertNode(70);
-    tree.InsertNode(60);
-    tree.InsertNode(80);
-    tree.InsertNode(100);
-    tree.InsertNode(120);
-    tree.InsertNode(130);
-    tree.InsertNode(110);
-    tree.InsertNode(150);
-    tree.InsertNode(170);
-    tree.InsertNode(140);
-
-    //전위
-	tree.PreOrderTraverse();
-    //중위
-    tree.InOrderTraverse();
-    //후위
-    tree.PostOrderTraverse();
-
-    //탐색
-	int value = 30;
-    if(tree.SearchNode(value))
-        cout << value << " exists in the tree." << endl;
-    else
-		cout << value << " does not exist in the tree." << endl;
-
-    //삭제
-	int deleteValue = 20;
-    tree.DeleteNode(deleteValue);
-    cout << "After deleting " << deleteValue << ":" << endl;
-	tree.InOrderTraverse();
-
-    deleteValue = 50;
-	tree.DeleteNode(deleteValue);
-    cout << "After deleting " << deleteValue << ":" << endl;
-    tree.InOrderTraverse();
-
-    deleteValue = 100;
-    tree.DeleteNode(deleteValue);
-    cout << "After deleting " << deleteValue << ":" << endl;
-	tree.InOrderTraverse();
-	
-
-	//종료 대기
-	std::cin.get();
+	return 0;
 }
