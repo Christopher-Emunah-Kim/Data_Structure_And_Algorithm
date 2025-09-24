@@ -124,9 +124,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DataStructure\Associative Container\HashTable.cpp" />
     <ClCompile Include="Data_Structure_Algorithm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DataStructure\Associative Container\BloomFilter.h" />
+    <ClInclude Include="DataStructure\Associative Container\CuckooHashing.h" />
+    <ClInclude Include="DataStructure\Associative Container\HashTable.h" />
+    <ClInclude Include="DataStructure\LambdaPractice.h" />
     <ClInclude Include="DataStructure\Linear_Structures\Associative_Container\MyDoublyLinkedList.h" />
     <ClInclude Include="DataStructure\Linear_Structures\Associative_Container\MyFowardList.h" />
     <ClInclude Include="DataStructure\Linear_Structures\Associative_Container\MyVector.h" />

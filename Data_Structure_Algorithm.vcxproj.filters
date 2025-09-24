@@ -18,6 +18,9 @@
     <ClCompile Include="Data_Structure_Algorithm.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="DataStructure\Associative Container\HashTable.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DataStructure\Linear_Structures\Associative_Container\MyVector.h">
@@ -57,6 +60,18 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="DataStructure\Nonlinear_Structures\Graph\AdjacencyListGraph.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructure\LambdaPractice.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructure\Associative Container\HashTable.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructure\Associative Container\CuckooHashing.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructure\Associative Container\BloomFilter.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

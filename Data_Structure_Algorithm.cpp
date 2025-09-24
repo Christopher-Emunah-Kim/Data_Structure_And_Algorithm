@@ -1,20 +1,33 @@
 ﻿
 #include <iostream>
 #include <string>
-#include "DataStructure/Nonlinear_Structures/Graph/AdjacencyListGraph.h"
-
-using namespace std;
+#include "DataStructure/Associative Container/BloomFilter.h"
 
 int main()
 {
-	AdjacencyListGraph graph(6);
-	graph.AddEdge(city::MOSCOW, city::LONDON, 2500);
-	graph.AddEdge(city::MOSCOW, city::SEOUL, 7000);
-	graph.AddEdge(city::MOSCOW, city::SEATTLE, 7500);
-	graph.AddEdge(city::LONDON, city::DUBAI, 5500);
-	graph.AddEdge(city::LONDON, city::SEATTLE, 7200);
-	graph.AddEdge(city::SEOUL, city::SYDNEY, 7800);
-	graph.RemoveEdge(city::MOSCOW, city::SEOUL);
+	BloomFilter bloomFilter(7);
+
+	bloomFilter.Print();
+
+	std::cout << std::endl;
+
+	bloomFilter.Insert(100);
+	bloomFilter.Insert(54);
+	bloomFilter.Insert(82);
+
+	std::cout << std::endl;
+
+	bloomFilter.Print();
+
+	std::cout << std::endl;
+
+	bloomFilter.Find(5);
+	bloomFilter.Find(50);
+	bloomFilter.Find(20);
+	bloomFilter.Find(54);
+
+	bloomFilter.Print();
+	std::cout << std::endl;
 
 	return 0;
 }
