@@ -17,9 +17,9 @@ private:
 		//해시함수 3개
 		switch (num)
 		{
-		case 0: return key & nBits;
-		case 1: return (key / 7) & nBits;
-		case 2: return (key / 11) & nBits;
+		case 0: return key % nBits;
+		case 1: return (key / 7) % nBits;
+		case 2: return (key / 11) % nBits;
 		}
 
 		return 0;
@@ -64,35 +64,31 @@ private:
 	int nBits;
 };
 
-//
-//int main()
-//{
-//	BloomFilter bloomFilter(20);
-//	bloomFilter.Print();
-//	std::cout << std::endl;
-//	bloomFilter.Insert(10);
-//	bloomFilter.Insert(20);
-//	bloomFilter.Insert(30);
-//	std::cout << std::endl;
-//	bloomFilter.Print();
-//	std::cout << std::endl;
-//	bloomFilter.Find(10);
-//	bloomFilter.Find(15);
-//	bloomFilter.Find(20);
-//	bloomFilter.Find(25);
-//	bloomFilter.Find(30);
-//	bloomFilter.Find(35);
-//	std::cout << std::endl;
-//	bloomFilter.Insert(104);
-//	bloomFilter.Insert(2);
-//	bloomFilter.Insert(70);
-//	bloomFilter.Insert(9);
-//	bloomFilter.Insert(90);
-//	bloomFilter.Insert(2);
-//	bloomFilter.Insert(7);
-//	std::cout << std::endl;
-//	bloomFilter.Print();
-//	std::cout << std::endl;
-//
-//	return 0;
-//}
+int main()
+{
+	BloomFilter bloomFilter(7);
+
+	bloomFilter.Print();
+
+	std::cout << std::endl;
+
+	bloomFilter.Insert(100);
+	bloomFilter.Insert(54);
+	bloomFilter.Insert(82);
+
+	std::cout << std::endl;
+
+	bloomFilter.Print();
+
+	std::cout << std::endl;
+
+	bloomFilter.Find(5);
+	bloomFilter.Find(50);
+	bloomFilter.Find(20);
+	bloomFilter.Find(54);
+
+	bloomFilter.Print();
+	std::cout << std::endl;
+
+	return 0;
+}
